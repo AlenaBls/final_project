@@ -1,0 +1,214 @@
+@keyframes header_anim {
+    from {
+      transform: translateX(-120%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+ body {
+    width: 100%;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.section {
+    color: #ffffff;
+    height: 75vh;
+    margin: 0;
+}
+
+
+.menu {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #000000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+
+.list-inline {
+    list-style: none;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.list-inline > li {
+    display: inline-block;
+    width: 24%;
+    height: 40px;
+    text-align: center;
+}
+
+.list-inline > li:before {
+    content: "\200B"; /* 1 */
+    position: absolute; /* 2 */
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.logo {
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1.5s;
+}
+a:hover .logo{
+    color: crimson;
+}
+.menu a{
+    font-size: 30px;
+}
+#start_img {
+    width: 95%;
+    padding-left: 5%;
+}
+div#welcome_image {
+    position: absolute;
+}
+.welcome_text{
+    position: absolute;
+    top: 50%;
+    color: white;
+    background: #a1a1a194;
+    font-size: 90px;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    transform: translateX(0);
+    animation-name: header_anim;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#underlined_text {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    transition: background-size .3s;
+}
+#underlined_text:hover {
+    background-size: 20% 2px;
+}
+#clothes{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#clothes p{
+    text-align: center;
+    font-size: 25px;
+}
+#clothes img{
+    width: 400px;
+    transition: 1s;
+    padding-left: 0%;
+}
+#clothes img:hover{
+    transform: scale(1.2);
+}
+.button{
+    padding: 12px 24px;
+    border-width: 2px;
+    border-radius: 16px;
+    border-color: rgb(0, 0, 0);
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease;
+}
+.button:hover{
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+}
+#position{
+    padding-top: 50px;
+}
+#underlined_text_2 {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    transition: background-size .3s;
+}
+#underlined_text_2:hover {
+    background-size: 40% 2px;
+}
+#position p{
+    position: flex;
+    font-size: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#underlined_text_3 {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    transition: background-size .3s;
+}
+#underlined_text_3:hover {
+    background-size: 25% 2px;
+}
+#contacts {
+    display: inline-flex;
+}
+#contacts p{
+    position: flex;
+    font-size: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+.brand {
+    text-decoration: none;
+
+    color: #ffffff;
+}
+#all {
+    display: flex;
+    flex-wrap: wrap;
+}
+btn-dark{
+    font-size: 14px;
+}
+.tovari {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    background-color: white;
+    border: 2px black;
+}
